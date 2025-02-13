@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Practice Que</title>
+</head>
+<body>
+    <button id="my-button" onclick="buttonPressed()">0</button>
+    <script>
+        let noOfTimeClicked = 0;
+
+        function buttonPressed(){
+            console.log('buttonPressed');
+            let button = document.querySelector('#my-button');
+            noOfTimeClicked++
+            button.innerText = noOfTimeClicked;
+
+        }
+        const currentHour = new Date().getHours();
+        let greeting;
+        const name = "Rakesh";
+
+        if (currentHour < 12) {
+            greeting = "Good Morning!";
+        } else if (currentHour < 18) {
+            greeting = "Good Afternoon!";
+        } else {
+            greeting = "Good Night!";
+        }
+
+        document.write(`${greeting} ${name}`);
+
+        // let count = 0;
+
+        // function updateCount() {
+        //     count++;
+        //     document.getElementById('countDisplay').innerText = count;
+        // }
+    </script>    
+</body>
+</html>

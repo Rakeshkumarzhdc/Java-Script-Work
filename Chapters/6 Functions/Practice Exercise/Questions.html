@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Functions questions</title>
+</head>
+<body>
+    <script>
+        function checkEvenOdd(n){
+            if (n%2===0) {
+                console.log('even');
+            }else{
+                console.log('odd');
+            }
+        }
+        let result = checkEvenOdd(8);
+
+        function checkLarger(a,b){
+            if (a > b) {
+                console.log('a is Larger');
+                
+            }else{
+                console.log('b is Larger')
+            }
+        }
+        let result1 = checkLarger(8,4);
+
+
+
+        function toFahrenheit(celsiusValue){
+            return 9/5*celsiusValue + 32;
+        }
+        console.log(toFahrenheit(38));
+
+    </script>
+</body>
+</html>

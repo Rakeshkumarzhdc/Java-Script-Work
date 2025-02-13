@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects Questions</title>
+</head>
+<body>
+    <script>
+
+        // Questions 1
+        let product = {
+            company: 'Myntra',
+            itemName: 'T-Shirt',
+            model: 'Summer Collection',
+            size: 'M',
+            price: 499
+        };
+        console.log(product);
+        let {company} = product
+        console.log(product)
+        
+        // Questions 2
+        let Objects1 = {
+            Name: 'Rakesh Sharma',
+            age: 25,
+        };
+
+        let objects2 = Objects1;
+        objects2.age = 30;
+        console.log('Objects1:', Objects1);
+        console.log('objects2:', objects2);
+
+
+        // Questions 3
+        let product1 = {
+            company: 'Myntra',
+            itemName: 'T-Shirt',
+            model: 'Summer Collection',
+            size: 'M',
+            price: 499,
+            "delivery time": "2 days"
+        };
+        console .log(product1["delivery time"]);
+
+        // Questions 4
+        let Mess = {
+            message: 'Good Job',
+            status: 'Complete',
+        };
+        let {message, status} = Mess;
+        console.log(message); // Good Job
+        console.log(status);  // Complete
+
+        // Questions 5
+        function areProductsIdentical(product1, product2) {
+    // Convert objects to JSON strings and compare them
+    return JSON.stringify(product1) === JSON.stringify(product2);
+}
+
+// Example product objects
+    let productA = { name: "Laptop", price:      50000, brand: "Dell" };
+    let productB = { name: "Laptop", price: 50000,  brand: "Dell" };
+    let productC = { name: "Laptop", price: 55000, brand: "HP" };
+
+// Compare products
+    console.log(areProductsIdentical(productA, productB)); // true
+    console.log(areProductsIdentical(productA, productC)); // false
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
