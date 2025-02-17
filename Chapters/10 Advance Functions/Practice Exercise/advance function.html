@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Functions Questions</title>
+</head>
+<body>
+    <button id="my-button" 
+    >Click Me</button>
+    <script>
+        // question 6
+        let arr = [1,2,3,4];
+        let square = arr.map((num) =>{
+            return num*num;
+        });
+        console.log(square);
+
+
+        // question 5
+        // let arr = [1,2,3,4];
+        // let sum = 0;
+        // arr.forEach(function (num) {
+        //     sum += num;
+        // });
+        // console.log("sum :", sum);
+
+
+
+
+        // question 3
+        document.getElementById('my-button').addEventListener('click', function() {
+            setTimeout(() => {
+                this.style.transform = 'scale(2)';
+            }, 2000);
+        });
+        function behaviour(event) {
+            console.log('Behaviour function called');
+        }
+
+        document.getElementById('my-button').addEventListener('click', behaviour);
+
+        //question1 
+        let multiply = (num1, num2) => {
+            return num1 * num2;
+        };
+        console.log(multiply(2, 3));
+
+        
+        // question 2
+        let runTwice = (func) => {
+            func();
+            func();
+        };
+
+        // Example usage:
+        let sayHello = () => {
+            console.log("Hello!");
+        };
+
+        runTwice(sayHello);
+        
+
+    </script>
+    
+</body>
+</html>
